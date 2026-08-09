@@ -69,3 +69,8 @@
     gap: 64px 24px;
   }
 }
+@media screen and (min-width: 1158px) {
+  .list-team {
+    flex-wrap: nowrap;
+  }
+}

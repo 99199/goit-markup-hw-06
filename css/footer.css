@@ -31,7 +31,7 @@
 .footer {
   background-color: #2e2f42;
   color: #f4f4fd;
-  padding: 100px 0;
+  padding: 96px 0;
 }
 
 .footer-description {
@@ -152,6 +152,9 @@
     margin: 0 auto;
     padding: 0 15px;
     gap: 0;
+  }
+  .footer {
+    padding: 100px 0;
   }
   .footer-copyright-container {
     margin-right: 120px;
