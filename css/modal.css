@@ -26,10 +26,10 @@
 }
 .modal {
   position: relative;
-  width: 408px;
+  width: 288px;
   background-color: #fcfcfc;
   border-radius: 4px;
-  padding: 72px 24px 24px;
+  padding: 72px 16px 24px;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
@@ -178,8 +178,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 16px;
-  height: 16px;
+  min-width: 14px;
+  height: 14px;
 
   margin-right: 8px;
 
@@ -237,4 +237,10 @@
 .form-btn:hover,
 .form-btn:focus {
   background-color: #404bbf;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    padding: 72px 24px 24px;
+  }
 }

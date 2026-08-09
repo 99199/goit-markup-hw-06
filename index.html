@@ -28,7 +28,12 @@
           <a href="./index.html" class="logo header-logo"
             ><span class="focus-color-web">WEB</span>STUDIO</a
           >
-          <nav>
+          <button class="burger-btn">
+            <svg class="burger-btn-icon" width="17" height="15">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
+          <nav class="navigation">
             <ul class="nav-list">
               <li class="nav-list-item">
                 <a class="nav-list-link is-active" href="#features">Features</a>
@@ -75,8 +80,8 @@
                   <use href="./images/icons.svg#icon-anten"></use>
                 </svg>
               </div>
-              <h3>Strategy</h3>
-              <p>
+              <h3 class="list-features-title">Strategy</h3>
+              <p class="list-features-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -87,8 +92,8 @@
                   <use href="./images/icons.svg#icon-cloak"></use>
                 </svg>
               </div>
-              <h3>Punctuality</h3>
-              <p>
+              <h3 class="list-features-title">Punctuality</h3>
+              <p class="list-features-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -99,8 +104,8 @@
                   <use href="./images/icons.svg#icon-laptop-diagram"></use>
                 </svg>
               </div>
-              <h3>Diligence</h3>
-              <p>
+              <h3 class="list-features-title">Diligence</h3>
+              <p class="list-features-description">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -111,8 +116,8 @@
                   <use href="./images/icons.svg#icon-astronvt"></use>
                 </svg>
               </div>
-              <h3>Technologies</h3>
-              <p>
+              <h3 class="list-features-title">Technologies</h3>
+              <p class="list-features-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -133,8 +138,8 @@
                 alt="Mark Guerrero"
               />
               <div class="team-list-item-description">
-                <h3>Mark Guerrero</h3>
-                <p>Product Designer</p>
+                <h3 class="team-list-item-name">Mark Guerrero</h3>
+                <p class="team-list-item-position">Product Designer</p>
                 <ul class="social-list">
                   <li class="social-list-item">
                     <a class="social-list-link" href="#">
@@ -175,8 +180,8 @@
                 alt="Tom Ford"
               />
               <div class="team-list-item-description">
-                <h3>Tom Ford</h3>
-                <p>Frontend Developer</p>
+                <h3 class="team-list-item-name">Tom Ford</h3>
+                <p class="team-list-item-position">Frontend Developer</p>
                 <ul class="social-list">
                   <li class="social-list-item">
                     <a class="social-list-link" href="#">
@@ -217,8 +222,8 @@
                 alt="Camila Garcia"
               />
               <div class="team-list-item-description">
-                <h3>Camila Garcia</h3>
-                <p>Marketing</p>
+                <h3 class="team-list-item-name">Camila Garcia</h3>
+                <p class="team-list-item-position">Marketing</p>
                 <ul class="social-list">
                   <li class="social-list-item">
                     <a class="social-list-link" href="#">
@@ -259,8 +264,8 @@
                 alt="Daniel Wilson"
               />
               <div class="team-list-item-description">
-                <h3>Daniel Wilson</h3>
-                <p>UI Designer</p>
+                <h3 class="team-list-item-name">Daniel Wilson</h3>
+                <p class="team-list-item-position">UI Designer</p>
                 <ul class="social-list">
                   <li class="social-list-item">
                     <a class="social-list-link" href="#">
@@ -296,6 +301,7 @@
           </ul>
         </div>
       </section>
+
       <section id="portfolio" class="portfolio section">
         <div class="container">
           <h2 class="h2-sections">Our Portfolio</h2>
@@ -418,6 +424,7 @@
         </div>
       </section>
     </main>
+
     <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-copyright-container">
@@ -478,7 +485,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open" id="modal">
+    <div class="backdrop" id="modal">
       <div class="modal">
         <button class="modal-close-wrap">
           <svg class="modal-close-icon" width="8" height="8">
@@ -550,6 +557,72 @@
           </div>
           <button class="form-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+    <div class="mobile-menu">
+      <button class="modal-close-wrap">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-navigation">
+        <ul class="mobile-menu-nav-list">
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-list-link is-active" href="#features"
+              >Features</a
+            >
+          </li>
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-list-link" href="#team">Team</a>
+          </li>
+          <li class="mobile-menu-nav-list-item">
+            <a class="mobile-menu-nav-list-link" href="#portfolio">Portfolio</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-address-social-wrapper">
+        <address class="mobile-menu-address">
+          <ul class="mobile-menu-address-list">
+            <li class="mobile-menu-address-list-item">
+              <a
+                class="mobile-menu-address-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile-menu-address-list-item">
+              <a class="mobile-menu-address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list">
+          <li class="social-list-item">
+            <a class="social-list-link" href="#">
+              <svg class="social-list-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use></svg
+            ></a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link" href="#">
+              <svg class="social-list-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use></svg
+            ></a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link" href="#">
+              <svg class="social-list-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-x"></use></svg
+            ></a>
+          </li>
+          <li class="social-list-item">
+            <a class="social-list-link" href="#">
+              <svg class="social-list-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-linked-in"></use></svg
+            ></a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
